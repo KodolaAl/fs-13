@@ -25,18 +25,12 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   display: block;
 }
-
+*/
 address {
   font-style: normal;
-}
-
-.container {
-  max-width: 1166px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -53,12 +47,34 @@ address {
   overflow: hidden;
 }
 
+.container {
+  width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container-narrow {
+  width: 1086px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*   ----- HEADER -----  */
 
 .header-page {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -68,6 +84,7 @@ address {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111;
+  margin-right: 100px;
 }
 
 .logo-part {
@@ -75,6 +92,9 @@ address {
 }
 
 .header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .header-nav-item {
@@ -94,6 +114,9 @@ address {
 }
 
 .header-soc-list {
+  display: flex;
+  margin-left: auto;
+  gap: 18px;
 }
 .header-soc-item {
 }
@@ -109,20 +132,37 @@ address {
 
 .hero {
   background-color: #1e1823;
+  border-radius: 30px;
+  padding-top: 371px;
+  padding-bottom: 50px;
+  margin-bottom: 72px;
 }
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+  min-width: 484px;
 }
+
+.hero-buttoms {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .hero-buttun {
   font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   background-color: #fd9222;
+  border-radius: 100px;
+  min-width: 144px;
+  padding: 14px 40px;
 }
 
 .hero-buttun:hover,
@@ -135,6 +175,9 @@ address {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
 }
 
 .hero-ancor-link:hover,
@@ -149,6 +192,7 @@ address {
   line-height: 1.28571;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 
 .hero-scroll-link:hover,
@@ -160,6 +204,17 @@ address {
 
 .features {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.features-list {
+  display: flex;
+  gap: 70px;
+}
+
+.features-item {
+  width: calc((100% - 140px) / 3);
 }
 
 .features-list-title {
@@ -167,6 +222,7 @@ address {
   font-size: 18px;
   letter-spacing: 0.01em;
   color: #fff;
+  margin-bottom: 18px;
 }
 
 .features-list-text {
@@ -179,6 +235,8 @@ address {
 /*  - Teste  - */
 
 .taste {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 .taste-title {
   font-weight: 600;
@@ -187,6 +245,10 @@ address {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 28px;
+  max-width: 411px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .taste-title span {
@@ -198,8 +260,23 @@ address {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 486px;
 }
 
+.taste-list {
+  display: flex;
+  gap: 19px;
+}
+
+.taste-item {
+  width: calc((100% - 3 * 19px) / 4);
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  padding: 28px 32px;
+}
 .taste-list-title {
   font-weight: 600;
   font-size: 14px;
@@ -211,6 +288,8 @@ address {
 /*  - Made -  */
 
 .made {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .made-title {
   font-weight: 600;
@@ -219,24 +298,41 @@ address {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .made-title span {
   color: #fd9222;
 }
+.made-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 .made-image {
+  border-radius: 15px;
+}
+
+.made-sub-text {
+  padding-left: 32px;
+  padding-right: 27px;
 }
 
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33333;
+  margin-bottom: 28px;
 }
 .made-list {
 }
 
 .made-item {
+  margin-bottom: 24px;
+}
+.made-item:last-child {
+  margin-bottom: 0;
 }
 
 .made-list-text {
@@ -248,6 +344,8 @@ address {
 /*  - Reviesws -  */
 
 .reviews {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .reviews-title {
@@ -257,6 +355,7 @@ address {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .reviews-title span {
@@ -264,12 +363,25 @@ address {
 }
 
 .reviews-list {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 28px;
 }
 
 .reviews-item {
+  width: calc((100% - 2 * 28px) / 3);
 }
 
 .reviews-item-images {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.foto-text {
+  padding: 56px 24px 24px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
 }
 
 .reviews-list-title {
@@ -277,6 +389,7 @@ address {
   font-size: 18px;
   line-height: 1.33333;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .reviews-list-text {
@@ -292,6 +405,11 @@ address {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  margin: 0 auto;
+  display: block;
 }
 
 .reviews-botton:hover,
@@ -304,6 +422,14 @@ address {
 
 .footer-page {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 86px;
+}
+
+.footer-container-up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 78px;
 }
 
 .footer-title {
@@ -312,6 +438,7 @@ address {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #fff;
+  max-width: 300px;
 }
 
 .footer-title span {
@@ -322,7 +449,7 @@ address {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
+  text-align: start;
   color: #fff;
 }
 
@@ -346,6 +473,8 @@ address {
 .footer-navigation {
 }
 .footer-navigation-list {
+  display: flex;
+  gap: 24px;
 }
 .footer-navigation-item {
 }
