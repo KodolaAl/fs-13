@@ -7,14 +7,36 @@ body {
 ol,
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 address {
   font-style: normal;
+}
+
+.container {
+  max-width: 1166px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -105,7 +127,7 @@ address {
 
 .hero-buttun:hover,
 .hero-buttun:focus {
-  background-color:  #fcf1e0;
+  background-color: #fcf1e0;
   color: #fd9222;
 }
 
@@ -274,8 +296,8 @@ address {
 
 .reviews-botton:hover,
 .reviews-botton:focus {
-    color: #fff;
-    background-color: #fd9222;
+  color: #fff;
+  background-color: #fd9222;
 }
 
 /*  ----  FOOTER  -----  */
